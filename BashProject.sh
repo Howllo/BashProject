@@ -1,10 +1,11 @@
 #!/bin/bash
 
+credit_num_pat="[credit card number]"
+sec_code_pat="[security code]"
+name_code_pat="[name]"
 names="RandomNames.txt"
-credit_cards="RandomCreditCard.txt"
-random_number=""
-security_num=""
-name=""
+paragraphs="RandomLatinParagraph.txt"
+credit_cards="CreditCard_Report.txt"
 low=0
 high=9
 count=0
@@ -15,11 +16,11 @@ fi
 
 touch "$credit_cards"
 
-read -p "How many credit cards do you want to create: " total_credit
+read -p "How many credit reports you want to generate: " total_credit
 
 while [ $count -lt $total_credit ]; do
 	# Reset the random number.
-	random_number=""
+	credit_num=""
 	
 	# Reset the Name
 	name=""
@@ -30,9 +31,9 @@ while [ $count -lt $total_credit ]; do
 	# Get Random credit card numbers. 5555 5555 5555 5555
 	for i in {1..16}; do
 		number=$((low + RANDOM % (high-low+1)))
-		random_number="$random_number$number"
-		if [ $((i % 4)) -eq 0 ]; then
-			random_number="$random_number "
+		credit_num="$credit_num$number"
+		if [[ $((i % 4)) -eq 0 && $i -ne 16 ]]; then
+			credit_num="$credit_num "
 		fi
 	done
 
@@ -46,10 +47,20 @@ while [ $count -lt $total_credit ]; do
 	ran_name=$((1 + RANDOM % (1000)))
 	name=$(sed -n "${ran_name}p" "$names")
 	
-	echo "Name: $name" >> $credit_cards
-	echo "Credit Card Number: $random_number" >> $credit_cards
-	echo "Security: $security_num" >> $credit_cards
-	echo " " >> $credit_cards
+	# Get random paragraph.
+	ran_para=$((1 + RANDOM % (15)))
+	para=$(sed -n "${ran_para}p" "$paragraphs")
+	
+	# Pattern match credit card number.
+	para=${para//'[credit card number]'/$credit_num}
+	
+	# Pattern match security code.
+	para=${para//'[security code]'/$security_num}
+	
+	# Pattern match name.
+	para=${para//'[name]'/$name}
+	
+	echo "$para" >> $credit_cards
 	((count++))
 done
 
