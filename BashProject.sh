@@ -1,8 +1,5 @@
 #!/bin/bash
 
-credit_num_pat="[credit card number]"
-sec_code_pat="[security code]"
-name_code_pat="[name]"
 names="RandomNames.txt"
 paragraphs="RandomLatinParagraph.txt"
 credit_cards="CreditCard_Report.txt"
