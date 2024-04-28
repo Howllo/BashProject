@@ -1,0 +1,32 @@
+Credit Card Report
+==================
+
+Cardholder Information:
+- Name: [name]
+- Card Number: [credit card number]
+- Security Num: [security code]
+- Expiry Date: [date]
+
+Transaction History:
+1. Date: 2024-04-06
+   Merchant: Online Coding Community
+   Amount: $10.00
+   Description: Donation to support open-source projects.
+
+2. Date: 2024-04-11
+   Merchant: Tech Store
+   Amount: $150.00
+   Description: Purchase of graphics card for gaming and programming.
+
+3. Date: 2024-04-17
+   Merchant: Programming Conference
+   Amount: $200.00
+   Description: Registration fee for annual programming conference.
+
+4. Date: 2024-04-23
+   Merchant: Digital Art Marketplace
+   Amount: $30.00
+   Description: Purchase of digital assets for game development.
+
+Total Monthly Expenses: $390.00
+

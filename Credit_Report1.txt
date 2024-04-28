@@ -1,0 +1,37 @@
+Credit Card Report
+==================
+
+Cardholder Information:
+- Name: [name]
+- Card Number: [credit card number]
+- Security Num: [security code]
+- Expiry Date: [date]
+
+Transaction History:
+1. Date: 2024-04-01
+   Merchant: Code Academy Bookstore
+   Amount: $50.00
+   Description: Purchase of "Introduction to Python Programming" textbook.
+
+2. Date: 2024-04-05
+   Merchant: Tech Superstore
+   Amount: $120.00
+   Description: Purchase of external hard drive for programming projects.
+
+3. Date: 2024-04-10
+   Merchant: JavaBeans Cafe
+   Amount: $20.50
+   Description: Lunch with classmates after coding workshop.
+
+4. Date: 2024-04-15
+   Merchant: Online Coding Courses
+   Amount: $75.00
+   Description: Enrollment in advanced Java programming course.
+
+5. Date: 2024-04-20
+   Merchant: IDE Software Solutions
+   Amount: $200.00
+   Description: Purchase of IDE software license for coding assignments.
+
+Total Monthly Expenses: $465.50
+

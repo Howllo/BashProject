@@ -1,0 +1,37 @@
+Credit Card Report
+==================
+
+Cardholder Information:
+- Name: [name]
+- Card Number: [credit card number]
+- Security Num: [security code]
+- Expiry Date: [date]
+
+Transaction History:
+1. Date: 2024-04-02
+   Merchant: Online Course Platform
+   Amount: $75.00
+   Description: Enrollment in web development course.
+
+2. Date: 2024-04-08
+   Merchant: Tech Accessories Store
+   Amount: $39.99
+   Description: Purchase of USB-C hub for laptop.
+
+3. Date: 2024-04-13
+   Merchant: Cloud Hosting Provider
+   Amount: $60.00
+   Description: Monthly hosting fee for personal website.
+
+4. Date: 2024-04-16
+   Merchant: Programming Books Emporium
+   Amount: $55.50
+   Description: Purchase of programming books bundle.
+
+5. Date: 2024-04-20
+   Merchant: Code Editor Software
+   Amount: $89.00
+   Description: Upgrade to premium version of code editor.
+
+Total Monthly Expenses: $319.49
+

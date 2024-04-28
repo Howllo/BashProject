@@ -1,0 +1,32 @@
+Credit Card Report
+==================
+
+Cardholder Information:
+- Name: [name]
+- Card Number: [credit card number]
+- Security Num: [security code]
+- Expiry Date: [date]
+
+Transaction History:
+1. Date: 2024-04-04
+   Merchant: Tech Gadgets Store
+   Amount: $120.00
+   Description: Purchase of smartwatch for fitness tracking.
+
+2. Date: 2024-04-09
+   Merchant: Programming Bootcamp
+   Amount: $500.00
+   Description: Registration fee for intensive coding bootcamp.
+
+3. Date: 2024-04-15
+   Merchant: Online Learning Platform
+   Amount: $25.00
+   Description: Purchase of advanced algorithms course.
+
+4. Date: 2024-04-19
+   Merchant: Software Subscription Service
+   Amount: $15.99
+   Description: Monthly subscription fee for productivity software.
+
+Total Monthly Expenses: $660.99
+

@@ -1,0 +1,47 @@
+Credit Card Report
+==================
+
+Cardholder Information:
+- Name: [name]
+- Card Number: [credit card number]
+- Security Num: [security code]
+- Expiry Date: [date]
+
+Transaction History:
+1. Date: 2024-04-03
+   Merchant: Tech Gear Store
+   Amount: $89.99
+   Description: Purchase of wireless keyboard and mouse combo.
+
+2. Date: 2024-04-06
+   Merchant: Cloud Computing Services
+   Amount: $45.00
+   Description: Monthly subscription fee for cloud storage.
+
+3. Date: 2024-04-10
+   Merchant: Coding Essentials
+   Amount: $30.00
+   Description: Purchase of coding notebook and pen.
+
+4. Date: 2024-04-12
+   Merchant: Online Learning Platform
+   Amount: $50.00
+   Description: Subscription renewal for programming tutorials.
+
+5. Date: 2024-04-18
+   Merchant: Software License Depot
+   Amount: $99.99
+   Description: Renewal of antivirus software license.
+
+6. Date: 2024-04-22
+   Merchant: Programming Tools Marketplace
+   Amount: $120.00
+   Description: Purchase of code editor software license.
+
+7. Date: 2024-04-25
+   Merchant: Coffee & Code Cafe
+   Amount: $15.25
+   Description: Coffee and snack during coding meetup.
+
+Total Monthly Expenses: $450.23
+
