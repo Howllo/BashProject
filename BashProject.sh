@@ -110,7 +110,6 @@ generate_report(){
 	done
 }
 
-
 echo "Do you want to generate reports (y or n)?" 
 read -r user_input
 
