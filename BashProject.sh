@@ -4,6 +4,9 @@
 report=""
 name=""
 dir="Credit_Reports"
+filename=""
+fileprefix="Redacted"
+newfile=""
 
 if [ ! -d "$dir" ]; then
 	mkdir "$dir"
@@ -20,7 +23,7 @@ create_report(){
 	# Create User Credit Report
 	report="$name$credit_cards"
 	report="${report// /_}"
-	
+	filename=$report
 	# Create file.
 	touch "$report"
 	
@@ -30,6 +33,18 @@ create_report(){
 	
 	# Copy original into new.
 	cat $temp_report >> $report
+}
+
+redact_report(){
+	newFile=$fileprefix$filename
+	# Searches for and Redacts the credit card numbers in a new file.
+	sed -E "s/([0-9]{4}[ ]){3}[0-9]/XXXX XXXX XXXX XXXX/g" $filename >> $newFile
+
+	# Redacts the Security Code in the new file
+	sed -E -i "s/[ ][0-9]{3}/ XXX/g" $newFile
+
+	# Redacts the Expiration Date in the new file
+	sed -E -i "s:[0-9][/][0-9]{2}:XX/XX:g" $newFile 
 }
 
 # Generate the report with all the data, Credit Card number, 
@@ -61,6 +76,9 @@ generate_report(){
 		# Reset the security number
 		security_num=""
 		
+		# Reset fileName
+		fileName=""
+
 		# Create the report file.
 		create_report
 
@@ -103,8 +121,12 @@ generate_report(){
 		# Pattern match date.
 		sed -i "s|\[date\]|$date|g" "$report"
 		
-		# Move the finished report.
+		# The Redacted file is created
+		redact_report
+
+		# Move the finished reports.
 		mv $report $dir
+		mv $newFile $dir
 		
 		((count++))
 	done
